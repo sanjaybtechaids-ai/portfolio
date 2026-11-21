@@ -16,6 +16,10 @@ Then visit `http://localhost:4173`.
 
 All skills, projects, timeline entries, achievements, and certificates live in `script.js`.
 
+### Project URLs and screenshots
+
+Each project entry in `script.js` can include an `imageUrl` for its preview image and a `liveLink` for its deployed demo. Both are displayed automatically when provided.
+
 ### Certificate URLs
 
 Each certificate is created with three independent, editable properties:
@@ -32,13 +36,7 @@ Put the real resume at `public/resume/Sanjay_S_Resume.pdf`. The UI detects when 
 
 ## Contact form
 
-The form validates its fields and includes a honeypot. It intentionally does not pretend to send messages without a configured endpoint. Before the main script executes, set a public endpoint in a separate local configuration script:
-
-```html
-<script>window.PORTFOLIO_CONTACT_ENDPOINT = "https://your-service.example/contact";</script>
-```
-
-That endpoint should validate requests and keep any email-provider secrets on the server—never in browser JavaScript.
+The static-site contact form uses Formspree's vanilla JavaScript integration with the configured form ID `xrpqandq`. It includes native fallback submission, validation state, a submit-state button, and a spam honeypot. No server code, secret, or local endpoint configuration is required.
 
 ## Personal links
 

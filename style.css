@@ -496,6 +496,21 @@ footer a {
     font-family: "DM Mono", monospace
 }
 
+.project-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-image + i {
+    background: #0f172ab8;
+    border-radius: 999px;
+    color: #fff;
+    padding: 6px 10px;
+}
+
 .project-body {
     padding: 24px
 }
@@ -834,6 +849,10 @@ footer a {
     margin: 10px 0 0
 }
 
+.form-error {
+    color: #b91c1c;
+}
+
 .contact-form small {
     display: block;
     color: var(--muted);
@@ -934,6 +953,13 @@ footer {
     height: 100%;
     object-fit: contain;
     max-height: 460px
+}
+
+.certificate-document {
+    width: 100%;
+    height: min(70vh, 680px);
+    border: 0;
+    background: #f8fafc
 }
 
 .modal-details {
