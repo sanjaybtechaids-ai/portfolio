@@ -32,7 +32,7 @@ The UI deliberately shows a polished placeholder when an image has not been supp
 
 ## Resume
 
-Put the real resume at `public/resume/Sanjay_S_Resume.pdf`. The UI detects when this file is missing and disables resume actions instead of linking to a broken file.
+Resume actions use the public Google Drive link configured in `index.html`. The download buttons use Drive's direct-download endpoint, and the view button opens the share page in a new tab.
 
 ## Contact form
 
